@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Utsav Shrestha</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 70px;
+      }
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+      .typing-caret::after {
+        content: "|";
+        margin-left: 3px;
+        opacity: 0.8;
+        animation: blink 1s step-end infinite;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white transition-colors duration-300"
+  >
+    <header>
+      <nav
+        class="container mx-auto flex flex-col sm:flex-row justify-between items-center p-4 text-black dark:text-white"
+      >
+        <div class="flex items-center space-x-4">
+          <h1 class="text-lg sm:text-xl font-bold mb-2 sm:mb-0">
+            Utsav Shrestha
+          </h1>
+        </div>
+
+        <div
+          class="flex items-center justify-center space-x-4 w-full sm:w-auto mt-3 sm:mt-0 flex-col sm:flex-row gap-5 sm:gap-0"
+        >
+          <ul
+            class="flex flex-wrap justify-center sm:justify-end space-x-4 sm:space-x-6 text-sm sm:text-base"
+          >
+            <li>
+              <a
+                href="#about"
+                class="hover:text-orange-700 dark:hover:text-orange-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#skills"
+                class="hover:text-orange-700 dark:hover:text-orange-300"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#experience"
+                class="hover:text-orange-700 dark:hover:text-orange-300"
+                >Experience</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                class="hover:text-orange-700 dark:hover:text-orange-300"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="hover:text-orange-700 dark:hover:text-orange-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <button
+            id="darkModeToggle"
+            aria-label="Toggle dark mode"
+            class="ml-2 px-3 py-1 border border-gray-400 dark:border-gray-600 rounded text-sm hover:bg-gray-300 bg-gray-800 dark:bg-gray-300 dark:hover:bg-white transition-colors duration-200"
+          >
+            🌙
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      class="text-center py-12 sm:py-16 px-4 text-orange-900 dark:text-orange-300"
+    >
+      <h2 class="text-2xl sm:text-3xl font-bold">Utsav Shrestha</h2>
+      <p class="mt-2 text-base sm:text-lg">
+        Full Stack Developer | MERN, NextJS, Laravel
+      </p>
+      <div
+        class="flex sm:gap-5 justify-center items-center flex-col sm:flex-row"
+      >
+        <a
+          href="#projects"
+          class="mt-4 inline-block text-black dark:text-white border-2 border-black dark:border-white px-4 py-2 rounded shadow text-sm sm:text-base font-semibold hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-300 ease-in-out"
+        >
+          View My Work
+        </a>
+        <a
+          href="files/Utsav_Shrestha_Resume.pdf"
+          download="Utsav_Shrestha_Resume.pdf"
+          class="mt-4 inline-block text-black dark:text-white border-2 border-black dark:border-white px-4 py-2 rounded shadow text-sm sm:text-base font-semibold hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-300 ease-in-out"
+        >
+          Download Resume
+        </a>
+      </div>
+    </section>
+    <section id="about" class="container mx-auto py-10 sm:py-12 px-4">
+      <h2 class="text-xl sm:text-2xl font-bold mb-6">About Me</h2>
+      <p
+        id="typingText"
+        class="text-sm sm:text-base text-justify typing-caret"
+      ></p>
+
+      <script>
+        const text = `I'm a full-stack developer proficient in React.js, Next.js, Laravel, PostgreSQL, Strapi CMS, Tailwind CSS, and Bootstrap, with strong experience in the MERN stack. I have successfully built diverse projects ranging from learning management systems to e-commerce and restaurant management platforms. Passionate about innovation, I also enjoy creating IoT solutions that seamlessly integrate hardware with scalable software.`;
+        const typingElement = document.getElementById("typingText");
+        let index = 0;
+        function type() {
+          if (index < text.length) {
+            typingElement.innerHTML +=
+              text.charAt(index) === "\n" ? "<br/>" : text.charAt(index);
+            index++;
+            setTimeout(type, 10);
+          }
+        }
+        type();
+      </script>
+    </section>
+
+    <section id="skills" class="py-10 sm:py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-xl sm:text-2xl font-bold mb-6">Skills</h2>
+        <ul class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-4">
+          <li
+            class="bg-white dark:bg-gray-800 p-3 sm:p-4 shadow rounded text-sm sm:text-base text-orange-900 dark:text-orange-300 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+          >
+            HTML, CSS, JavaScript, PHP
+          </li>
+          <li
+            class="bg-white dark:bg-gray-800 p-3 sm:p-4 shadow rounded text-sm sm:text-base text-orange-900 dark:text-orange-300 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+          >
+            MERN, Next, Laravel, RESTful APIs
+          </li>
+          <li
+            class="bg-white dark:bg-gray-800 p-3 sm:p-4 shadow rounded text-sm sm:text-base text-orange-900 dark:text-orange-300 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+          >
+            PostgreSQL, Strapi, MongoDB
+          </li>
+          <li
+            class="bg-white dark:bg-gray-800 p-3 sm:p-4 shadow rounded text-sm sm:text-base text-orange-900 dark:text-orange-300 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+          >
+            Git, Github, Xampp, Postman, Docker
+          </li>
+          <li
+            class="bg-white dark:bg-gray-800 p-3 sm:p-4 shadow rounded text-sm sm:text-base text-orange-900 dark:text-orange-300 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+          >
+            Agile/Scrum familiarity, Project lifecycle understanding
+          </li>
+          <li
+            class="bg-white dark:bg-gray-800 p-3 sm:p-4 shadow rounded text-sm sm:text-base text-orange-900 dark:text-orange-300 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+          >
+            Problem-solving & debugging
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="container mx-auto py-10 sm:py-12 px-4">
+      <h2 class="text-xl sm:text-2xl font-bold mb-6">Experience</h2>
+      <div class="space-y-6 text-sm sm:text-base">
+        <div>
+          <h3 class="font-semibold text-orange-700 dark:text-orange-400">
+            <a
+              href="https://www.dawnpixel.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:underline"
+              >Dawn Pixel</a
+            >
+            |
+            <a
+              href="https://aventoz.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:underline"
+              >Aventoz</a
+            >
+            | Full-Stack Developer
+          </h3>
+          <p class="italic text-gray-600 dark:text-gray-400">
+            December 2024 – July 2025
+          </p>
+          <p>
+            Full-stack Development Intern at Dawn Pixel, where I collaborated
+            with teams across different project areas and gained experience
+            working on both frontend and backend development.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-orange-700 dark:text-orange-400">
+            <a
+              href="https://techoresolutions.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:underline"
+              >Techore Solutions</a
+            >
+            | Intern
+          </h3>
+          <p class="italic text-gray-600 dark:text-gray-400">
+            November 2023 – January 2024
+          </p>
+          <p>
+            Worked as a Frontend Intern at Techore Solutions, where I learned
+            the formal process of project development and strengthened my
+            professional development skills.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container mx-auto py-10 sm:py-12 px-4">
+      <h2 class="text-xl sm:text-2xl font-bold mb-6">Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- 2025 -->
+        <div
+          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="font-semibold text-base sm:text-lg">Pragyanam</h3>
+            <span class="text-xs italic">2025</span>
+          </div>
+          <p class="text-xs sm:text-sm mb-4">
+            E-learning platform using ReactJS, Laravel
+          </p>
+        </div>
+
+        <div
+          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="font-semibold text-base sm:text-lg">Aventoz</h3>
+            <span class="text-xs italic">2025</span>
+          </div>
+          <p class="text-xs sm:text-sm mb-4">
+            Online Voting Platform using Laravel
+          </p>
+        </div>
+
+        <div
+          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="font-semibold text-base sm:text-lg">
+              CCRC Entrance Result
+            </h3>
+            <span class="text-xs italic">2025</span>
+          </div>
+          <p class="text-xs sm:text-sm mb-4">
+            Entrance Result management for CCRC college, Balkumari using Laravel
+          </p>
+        </div>
+
+        <!-- 2024 -->
+        <div
+          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="font-semibold text-base sm:text-lg">ArtVedic</h3>
+            <span class="text-xs italic">2024</span>
+          </div>
+          <p class="text-xs sm:text-sm mb-4">
+            Ecommerce platform for artists to sell their artworks <br />
+            NextJS, TailwindCSS, Strapi
+          </p>
+        </div>
+
+        <div
+          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="font-semibold text-base sm:text-lg">Hotel-California</h3>
+            <span class="text-xs italic">2024</span>
+          </div>
+          <p class="text-xs sm:text-sm mb-4">
+            Restaurant Management System for Waiter-less service using ReactJS,
+            Laravel, Xampp
+          </p>
+        </div>
+
+        <!-- 2023 -->
+        <div
+          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="font-semibold text-base sm:text-lg">Room-E</h3>
+            <span class="text-xs italic">2023</span>
+          </div>
+          <p class="text-xs sm:text-sm mb-4">
+            Room Rental website using ReactJS, TailwindCSS, Strapi
+          </p>
+        </div>
+
+        <div
+          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="font-semibold text-base sm:text-lg">Home-E</h3>
+            <span class="text-xs italic">2023</span>
+          </div>
+          <p class="text-xs sm:text-sm mb-4">
+            Home Automation System using Arduino, Relays
+          </p>
+        </div>
+
+        <!-- 2022 -->
+        <div
+          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+        >
+          <div class="flex justify-between items-center mb-2">
+            <h3 class="font-semibold text-base sm:text-lg">Track-U</h3>
+            <span class="text-xs italic">2022</span>
+          </div>
+          <p class="text-xs sm:text-sm mb-4">
+            Vehicle Tracking system using PHP
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-10 sm:py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="text-xl sm:text-2xl font-bold mb-6">Contact</h2>
+
+        <div class="space-y-3">
+          <p class="text-sm sm:text-base text-orange-900 dark:text-orange-300">
+            Email:
+            <a
+              href="mailto:utsavshrestha3000@gmail.com"
+              class="underline hover:text-orange-700 dark:hover:text-orange-400"
+              >utsavshrestha3000@gmail.com</a
+            >
+          </p>
+
+          <p class="text-sm sm:text-base text-orange-900 dark:text-orange-300">
+            GitHub:
+            <a
+              href="https://github.com/utsavshrestha-055"
+              target="_blank"
+              class="underline hover:text-orange-700 dark:hover:text-orange-400"
+              >github.com/utsavshrestha-055</a
+            >
+          </p>
+
+          <p class="text-sm sm:text-base text-orange-900 dark:text-orange-300">
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/utsav-shrestha-926019193/"
+              target="_blank"
+              class="underline hover:text-orange-700 dark:hover:text-orange-400"
+              >linkedin.com/in/utsav-shrestha-926019193/</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-orange-100 dark:bg-gray-800 text-black dark:text-white text-center py-4 text-sm sm:text-base"
+    >
+      <p></p>
+    </footer>
+
+    <script>
+      const toggle = document.getElementById("darkModeToggle");
+      const html = document.documentElement;
+
+      (function initTheme() {
+        const saved = localStorage.getItem("theme");
+
+        if (saved === "dark") {
+          html.classList.add("dark");
+          toggle.textContent = "☀️";
+        } else {
+          html.classList.remove("dark");
+          toggle.textContent = "🌙";
+        }
+      })();
+
+      toggle.addEventListener("click", () => {
+        html.classList.toggle("dark");
+        if (html.classList.contains("dark")) {
+          localStorage.setItem("theme", "dark");
+          toggle.textContent = "☀️";
+        } else {
+          localStorage.setItem("theme", "light");
+          toggle.textContent = "🌙";
+        }
+      });
+
+      window.matchMedia &&
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", (e) => {
+            const saved = localStorage.getItem("theme");
+            if (!saved) {
+              if (e.matches) {
+                html.classList.add("dark");
+                toggle.textContent = "☀️";
+              } else {
+                html.classList.remove("dark");
+                toggle.textContent = "🌙";
+              }
+            }
+          });
+    </script>
+  </body>
+</html>

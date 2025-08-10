@@ -44,7 +44,7 @@
         </div>
 
         <div
-          class="flex items-center justify-center space-x-4 w-full sm:w-auto mt-3 sm:mt-0 flex-col sm:flex-row gap-5 sm:gap-0"
+          class="flex items-center justify-center space-x-4 w-full sm:w-auto mt-3 sm:mt-0 flex-col sm:flex-row gap-5"
         >
           <ul
             class="flex flex-wrap justify-center sm:justify-end space-x-4 sm:space-x-6 text-sm sm:text-base"
@@ -89,7 +89,8 @@
           <button
             id="darkModeToggle"
             aria-label="Toggle dark mode"
-            class="ml-2 px-3 py-1 border border-gray-400 dark:border-gray-600 rounded text-sm hover:bg-gray-300 bg-gray-800 dark:bg-gray-300 dark:hover:bg-white transition-colors duration-200"
+            style="margin: 0px"
+            class="px-3 py-1 border border-gray-400 dark:border-gray-600 rounded text-sm hover:bg-gray-300 bg-gray-800 dark:bg-gray-300 dark:hover:bg-white transition-colors duration-200"
           >
             🌙
           </button>
@@ -100,9 +101,13 @@
     <section
       class="text-center py-12 sm:py-16 px-4 text-orange-900 dark:text-orange-300"
     >
-      <h2 class="text-2xl sm:text-3xl font-bold">Utsav Shrestha</h2>
-      <p class="mt-2 text-base sm:text-lg">
-        Full Stack Developer | MERN, NextJS, Laravel
+      <h2 class="text-4xl sm:text-5xl font-bold">Utsav Shrestha</h2>
+      <p class="mt-2 text-lg sm:text-xl">Full Stack Developer</p>
+      <!-- <p class="mt-2 text-sm sm:text-base text-white">
+        In love with anything that has a processor or an Engine.
+      </p> -->
+      <p class="mt-2 text-sm sm:text-base text-white">
+        From code to combustion — I’m in.
       </p>
       <div
         class="flex sm:gap-5 justify-center items-center flex-col sm:flex-row"
@@ -130,7 +135,7 @@
       ></p>
 
       <script>
-        const text = `I'm a full-stack developer proficient in React.js, Next.js, Laravel, PostgreSQL, Strapi CMS, Tailwind CSS, and Bootstrap, with strong experience in the MERN stack. I have successfully built diverse projects ranging from learning management systems to e-commerce and restaurant management platforms. Passionate about innovation, I also enjoy creating IoT solutions that seamlessly integrate hardware with scalable software.`;
+        const text = `Full-stack developer skilled in React.js, Next.js, Laravel, PostgreSQL, Strapi, and the MERN stack, with experience building everything from learning platforms to e-commerce systems. Passionate about innovation, I craft IoT solutions that seamlessly connect hardware and scalable software, while engines and bikes fuel my curiosity just as much as technology does.`;
         const typingElement = document.getElementById("typingText");
         let index = 0;
         function type() {
@@ -240,109 +245,342 @@
 
     <section id="projects" class="container mx-auto py-10 sm:py-12 px-4">
       <h2 class="text-xl sm:text-2xl font-bold mb-6">Projects</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <!-- 2025 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <div
-          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:shadow-xl transform-all hover:-translate-y-2 duration-500 ease-in-out"
         >
-          <div class="flex justify-between items-center mb-2">
-            <h3 class="font-semibold text-base sm:text-lg">Pragyanam</h3>
-            <span class="text-xs italic">2025</span>
+          <div class="h-48 bg-gray-200 dark:bg-gray-700">
+            <img
+              src="./images/ccrc.png"
+              alt="CCRC Entrance Result"
+              class="w-full h-full object-cover"
+            />
           </div>
-          <p class="text-xs sm:text-sm mb-4">
-            E-learning platform using ReactJS, Laravel
-          </p>
+          <div class="p-5">
+            <div class="flex justify-between items-center mb-2">
+              <h3
+                class="text-lg font-semibold text-gray-900 dark:text-gray-100"
+              >
+                CCRC Entrance Result
+              </h3>
+              <span class="text-xs italic text-gray-500 dark:text-gray-400"
+                >2025</span
+              >
+            </div>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+              Entrance Result management for CCRC college, Balkumari.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >Laravel</span
+              >
+            </div>
+          </div>
         </div>
 
         <div
-          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:shadow-xl transform-all hover:-translate-y-2 duration-500 ease-in-out"
         >
-          <div class="flex justify-between items-center mb-2">
-            <h3 class="font-semibold text-base sm:text-lg">Aventoz</h3>
-            <span class="text-xs italic">2025</span>
+          <div class="h-48 bg-gray-200 dark:bg-gray-700">
+            <img
+              src="./images/pragyanam.png"
+              alt="Pragyanam"
+              class="w-full h-full object-cover"
+            />
           </div>
-          <p class="text-xs sm:text-sm mb-4">
-            Online Voting Platform using Laravel
-          </p>
+          <div class="p-5">
+            <div class="flex justify-between items-center mb-2">
+              <h3
+                class="text-lg font-semibold text-gray-900 dark:text-gray-100"
+              >
+                Pragyanam
+              </h3>
+              <span class="text-xs italic text-gray-500 dark:text-gray-400"
+                >2025</span
+              >
+            </div>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+              E-learning platform.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >ReactJS</span
+              >
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >Laravel</span
+              >
+            </div>
+          </div>
         </div>
 
         <div
-          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:shadow-xl transform-all hover:-translate-y-2 duration-500 ease-in-out"
         >
-          <div class="flex justify-between items-center mb-2">
-            <h3 class="font-semibold text-base sm:text-lg">
-              CCRC Entrance Result
-            </h3>
-            <span class="text-xs italic">2025</span>
+          <div class="h-48 bg-gray-200 dark:bg-gray-700">
+            <img
+              src="./images/aventoz.png"
+              alt="Aventoz"
+              class="w-full h-full object-cover"
+            />
           </div>
-          <p class="text-xs sm:text-sm mb-4">
-            Entrance Result management for CCRC college, Balkumari using Laravel
-          </p>
-        </div>
-
-        <!-- 2024 -->
-        <div
-          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
-        >
-          <div class="flex justify-between items-center mb-2">
-            <h3 class="font-semibold text-base sm:text-lg">ArtVedic</h3>
-            <span class="text-xs italic">2024</span>
+          <div class="p-5">
+            <div class="flex justify-between items-center mb-2">
+              <h3
+                class="text-lg font-semibold text-gray-900 dark:text-gray-100"
+              >
+                Aventoz
+              </h3>
+              <span class="text-xs italic text-gray-500 dark:text-gray-400"
+                >2025</span
+              >
+            </div>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+              Online Voting Platform.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >Laravel</span
+              >
+            </div>
           </div>
-          <p class="text-xs sm:text-sm mb-4">
-            Ecommerce platform for artists to sell their artworks <br />
-            NextJS, TailwindCSS, Strapi
-          </p>
-        </div>
-
-        <div
-          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
-        >
-          <div class="flex justify-between items-center mb-2">
-            <h3 class="font-semibold text-base sm:text-lg">Hotel-California</h3>
-            <span class="text-xs italic">2024</span>
-          </div>
-          <p class="text-xs sm:text-sm mb-4">
-            Restaurant Management System for Waiter-less service using ReactJS,
-            Laravel, Xampp
-          </p>
-        </div>
-
-        <!-- 2023 -->
-        <div
-          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
-        >
-          <div class="flex justify-between items-center mb-2">
-            <h3 class="font-semibold text-base sm:text-lg">Room-E</h3>
-            <span class="text-xs italic">2023</span>
-          </div>
-          <p class="text-xs sm:text-sm mb-4">
-            Room Rental website using ReactJS, TailwindCSS, Strapi
-          </p>
         </div>
 
         <div
-          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:shadow-xl transform-all hover:-translate-y-2 duration-500 ease-in-out"
         >
-          <div class="flex justify-between items-center mb-2">
-            <h3 class="font-semibold text-base sm:text-lg">Home-E</h3>
-            <span class="text-xs italic">2023</span>
+          <div class="h-48 bg-gray-200 dark:bg-gray-700">
+            <img
+              src="./images/arvedic.jpeg"
+              alt="ArtVedic"
+              class="w-full h-full object-cover"
+            />
           </div>
-          <p class="text-xs sm:text-sm mb-4">
-            Home Automation System using Arduino, Relays
-          </p>
+          <div class="p-5">
+            <div class="flex justify-between items-center mb-2">
+              <h3
+                class="text-lg font-semibold text-gray-900 dark:text-gray-100"
+              >
+                ArtVedic
+              </h3>
+              <span class="text-xs italic text-gray-500 dark:text-gray-400"
+                >2024</span
+              >
+            </div>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+              Ecommerce platform for artists to sell their artworks.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >NextJS</span
+              >
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >TailwindCSS</span
+              >
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >Strapi</span
+              >
+            </div>
+          </div>
         </div>
 
-        <!-- 2022 -->
         <div
-          class="bg-white dark:bg-gray-800 shadow rounded p-4 cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:text-white hover:bg-orange-600 transform hover:-translate-y-1 transition-all duration-500 ease-in-out"
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:shadow-xl transform-all hover:-translate-y-2 duration-500 ease-in-out"
         >
-          <div class="flex justify-between items-center mb-2">
-            <h3 class="font-semibold text-base sm:text-lg">Track-U</h3>
-            <span class="text-xs italic">2022</span>
+          <div class="h-48 bg-gray-200 dark:bg-gray-700">
+            <img
+              src="./images/hotel.jpeg"
+              alt="Hotel-California"
+              class="w-full h-full object-cover"
+            />
           </div>
-          <p class="text-xs sm:text-sm mb-4">
-            Vehicle Tracking system using PHP
-          </p>
+          <div class="p-5">
+            <div class="flex justify-between items-center mb-2">
+              <h3
+                class="text-lg font-semibold text-gray-900 dark:text-gray-100"
+              >
+                Hotel-California
+              </h3>
+              <span class="text-xs italic text-gray-500 dark:text-gray-400"
+                >2024</span
+              >
+            </div>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+              Restaurant Management System for Waiter-less service.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >ReactJS</span
+              >
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >Laravel</span
+              >
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >Xampp</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:shadow-xl transform-all hover:-translate-y-2 duration-500 ease-in-out"
+        >
+          <div class="h-48 bg-gray-200 dark:bg-gray-700">
+            <img
+              src="./images/room-e.jpeg"
+              alt="Room-E"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5">
+            <div class="flex justify-between items-center mb-2">
+              <h3
+                class="text-lg font-semibold text-gray-900 dark:text-gray-100"
+              >
+                Room-E
+              </h3>
+              <span class="text-xs italic text-gray-500 dark:text-gray-400"
+                >2023</span
+              >
+            </div>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+              Room Rental website.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >ReactJS</span
+              >
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >TailwindCSS</span
+              >
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >Strapi</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:shadow-xl transform-all hover:-translate-y-2 duration-500 ease-in-out"
+        >
+          <div class="h-48 bg-gray-200 dark:bg-gray-700">
+            <img
+              src="./images/home.jpeg"
+              alt="Home-E"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5">
+            <div class="flex justify-between items-center mb-2">
+              <h3
+                class="text-lg font-semibold text-gray-900 dark:text-gray-100"
+              >
+                Home-E
+              </h3>
+              <span class="text-xs italic text-gray-500 dark:text-gray-400"
+                >2023</span
+              >
+            </div>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+              Home Automation System using Arduino, Relays.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >Arduino</span
+              >
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >Relays</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:shadow-xl transform-all hover:-translate-y-2 duration-500 ease-in-out"
+        >
+          <div class="h-48 bg-gray-200 dark:bg-gray-700">
+            <img
+              src="./images/track.jpeg"
+              alt="Track-U"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5">
+            <div class="flex justify-between items-center mb-2">
+              <h3
+                class="text-lg font-semibold text-gray-900 dark:text-gray-100"
+              >
+                Track-U
+              </h3>
+              <span class="text-xs italic text-gray-500 dark:text-gray-400"
+                >2022</span
+              >
+            </div>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+              Vehicle Tracking system.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >PHP</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer border-2 border-gray-200 dark:border-gray-600 hover:shadow-xl transform-all hover:-translate-y-2 duration-500 ease-in-out"
+        >
+          <div class="h-48 bg-gray-200 dark:bg-gray-700">
+            <img
+              src="./images/walle.jpeg"
+              alt="Wall-E"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5">
+            <div class="flex justify-between items-center mb-2">
+              <h3
+                class="text-lg font-semibold text-gray-900 dark:text-gray-100"
+              >
+                Wall-E (Personal Project)
+              </h3>
+              <span class="text-xs italic text-gray-500 dark:text-gray-400"
+                >2022</span
+              >
+            </div>
+            <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
+              RC robot with wheels.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >Esp32</span
+              >
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >Wifi</span
+              >
+              <span
+                class="bg-orange-200 dark:bg-orange-600 text-black dark:text-orange-100 text-xs font-semibold px-3 py-1 rounded transform-all hover:-translate-y-1 duration-500 ease-in-out transform-all hover:-translate-y-1 duration-500 ease-in-out"
+                >Web Connection</span
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -389,6 +627,30 @@
     >
       <p></p>
     </footer>
+    <!-- Floating Back to Top Button -->
+    <button
+      id="backToTop"
+      class="fixed bottom-6 right-6 md:bottom-8 lg:bottom-12 md:right-8 lg:right-12 bg-orange-600 text-white py-3 px-5 rounded-xl shadow-lg hover:bg-orange-700 transition-all duration-300 hidden"
+      aria-label="Back to top"
+    >
+      ↑
+    </button>
+
+    <script>
+      const backToTopBtn = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          backToTopBtn.classList.remove("hidden");
+        } else {
+          backToTopBtn.classList.add("hidden");
+        }
+      });
+
+      backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
 
     <script>
       const toggle = document.getElementById("darkModeToggle");
